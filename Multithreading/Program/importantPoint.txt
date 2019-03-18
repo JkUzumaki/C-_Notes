@@ -1,0 +1,3 @@
+To prevent the mistake of not calling the join() or detach() with the thread in case of exception, we use resource acqusitionis initialization.
+
+

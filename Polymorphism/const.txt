@@ -1,0 +1,80 @@
+const keyword:
+	
+	constant means that dosent change.
+	const is used to make program elements constant.
+		
+	const can be used with,	
+	1. variable
+	2. Pointer
+	3. Function arguments and return types
+	4. Class data members
+	5. Class member functions
+	6. Objects	
+
+	>_______constant variable in c++_______
+	
+	example:
+		const int i = 10;
+		i++; // this lead to compiler error
+
+	>_______constant Pointer in c++_______
+	
+	example:
+		const int* u; //declaration 1
+		int const* u; //declaration 2
+		Here,
+		     declaration 1 and declaration 2 are both has same meaning
+		int x = 1;
+		int *const w = &x;
+		Here,
+		    w will always point to x and it cannot be changes as it constant
+		    But the value in x can be changed
+
+	>_______constant Function arguments and return types_______
+	
+	example:	
+			
+		void fun(const int i)
+		{
+		    i++; //error
+		}
+
+		const int h(){
+		    return 1;
+		}
+		
+		Note:
+			1. While using user defined data types, returning const data type will create a error.
+			2. Passing const data type to a non const data type will create a error.
+	
+	>_______constant class member_______
+	
+	example:
+		const data memeber are initialized in class.
+		const data members are assigned value in the constructor. 
+		
+		class Test
+		{
+			const int i;
+			Test(int val){
+				i = val;
+			}
+		};
+
+	>________const variable life time_______
+	
+	example:
+		1. When a object is declared using const, it's value can never be changed during the life time of the program
+		
+
+	NOTE:
+		But i want to BREAK THE CONST RULE?
+			Then use the mutable keyword variable as it is used to modify the value.
+		 
+
+
+
+
+
+
+
